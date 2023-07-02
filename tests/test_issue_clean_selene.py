@@ -12,4 +12,3 @@ def test_issue_title(browser_setup):
     browser.element("#issues-tab").click()
 
     browser.element('#issue_81_link').should(have.exact_text('issue_to_test_allure_report'))
-
