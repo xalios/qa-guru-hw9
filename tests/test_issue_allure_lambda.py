@@ -1,4 +1,4 @@
-from tests.steps import test_issue_lambda as step
+from tests.steps import steps_issue_allure_lamda as step
 
 
 def test_issue_title(browser_setup):
