@@ -1,8 +1,14 @@
+import allure
+from allure_commons.types import Severity
 from selene.support.shared import browser
 from selene import by, have
 from allure import step
 
 
+@allure.label("owner", "xalios")
+@allure.tag('smoke')
+@allure.severity(Severity.NORMAL)
+@allure.story('test using steps')
 def test_issue_title(browser_setup):
     with step('Открываем главую страницу GitHub'):
         browser.open("https://github.com/")
